@@ -13,6 +13,7 @@
 			
 		</view>
 		<button v-else type="default" @click="goto('/pages/mine/login')">登录/注册</button>
+		<button type="default">asd</button>
 	</view>
 </template>
 

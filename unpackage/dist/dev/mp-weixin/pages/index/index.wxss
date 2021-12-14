@@ -1,0 +1,106 @@
+
+@font-face {
+		font-family: 'iconfont';
+		/* Project id 2961193 */
+		src: url('//at.alicdn.com/t/font_2961193_jm641tf21fo.woff2?t=1637719908962') format('woff2'),
+			url('//at.alicdn.com/t/font_2961193_jm641tf21fo.woff?t=1637719908962') format('woff'),
+			url('//at.alicdn.com/t/font_2961193_jm641tf21fo.ttf?t=1637719908962') format('truetype');
+}
+.iconfont {
+		font-family: "iconfont" !important;
+		font-size: 12px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke-width: 0.2px;
+		-moz-osx-font-smoothing: grayscale;
+}
+.content {
+		/* display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center; */
+		overflow: hidden
+}
+.active {
+		border-bottom: 1px solid red;
+}
+.nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		
+		white-space: nowrap;
+}
+.nav::-webkit-scrollbar {
+	  display: none;
+}
+.nav-item {
+		display: inline-block;
+		padding: 14rpx 25rpx;
+}
+.nav-item::-webkit-scrollbar {
+	  display: none;
+}
+.swiper {
+		margin: 80rpx 0 0 0;
+		overflow: hidden;
+}
+.list-view-body {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+.list-view-item {
+		width: 690rpx;
+		height: 140rpx;
+		padding: 30rpx 0;
+		display: flex;
+		position: relative;
+		/* border-bottom: 1px solid #999; */
+}
+.list-view-item:after {
+		content: " ";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 1px;
+		border-bottom: 1px solid #d9d9d9;
+		color: #d9d9d9;
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		left: 0;
+		z-index: 2;
+}
+.list-view-item:last-child:after {
+		display: none;
+}
+.list-view-item .cover-image {
+		width: 140rpx;
+		height: 140rpx;
+		padding-right: 30rpx;
+}
+.list-view-item .cover-data {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+}
+.gotop-button {
+		width: 40px;
+		height: 40px;
+		/* border-radius: 100px; */
+		/* background-color:#007AFF; */
+		font-size: 40px;
+		text-align: center;
+		color: white;
+		/* border: 40px solid rgba(200,200,200,0); */
+		/* border-bottom-color: #007AFF; */
+		position: fixed;
+		right: 10px;
+		bottom: 0px;
+		z-index: 1000;
+		transition: linear 1s;
+}
+
